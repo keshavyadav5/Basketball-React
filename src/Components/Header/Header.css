@@ -1,0 +1,120 @@
+.header{
+  width: 90%;
+  padding: 10px 20px;
+  background-color: #313131;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  border: 1px solid rgb(71, 69, 69);
+  border-radius: 5px;
+  margin: 20px 4%;
+}
+
+.dark-nav{
+    width: 90%;
+    padding: 10px 5%;
+    margin: 0px 0px;
+    transition: all 0.5s;
+}
+.logo h1{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #f34c21;
+  cursor: pointer;
+}
+.logo h1 span{
+  color: #ffff;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+ ul li{
+  list-style: none;
+  padding-left: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+ul li:hover{
+  color: #f34c21;
+}
+.menu-icon{
+  margin: 10px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+.menu-icon:active{
+  transform: rotate(20deg);
+}
+
+.hide{
+  display: none;
+}
+
+/* ------------------------ */
+@media(max-width:1000px){
+  .header{
+    width: 90%;
+    padding: 10px 5%;
+    margin: 0px 0px;
+    transition: all 0.5s;
+  } 
+  ul{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    display: block;
+    background-color: #313131;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+  ul li{
+    padding-top: 30px;
+    transition: all 0.5s;
+  }
+  .menu-icon{
+    display: block;
+    transition: all 0.5s;
+  }
+  .hide-menu {
+    left: -200px;
+    transition: all 0.5s;
+  }
+  .show{
+    display: none;
+    transition: all 0.5s;
+  }
+  .hide-menu {
+    left: -200px;
+    transition: all 0.5s;
+  }
+}
+
+@media(max-width:500px){
+  .logo h1{
+    font-size: 1.8rem;
+    transition: all 0.5s;
+  }
+  .header-btn{
+    display: none;
+    transition: all 0.5s;
+  }
+  .menu-icon{
+    margin: 10px;
+    width: 40px;
+    height: 25px;
+    transition: all 0.5s;
+  }
+}

@@ -1,0 +1,130 @@
+.about{
+  width: 100vw;
+  padding: 100px 10%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.about-image{
+  width: 40%;
+}
+.about-image-upper{
+  width: 50%;
+  height: 20px;
+  background-color: #f94d21;
+}
+
+.about-img{
+  background-image: url('../../assets/about.png');
+  width: 40vw;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.about-content{
+  width: 40%;
+  padding: 20px 50px;
+}
+
+.about-content-header{
+  display: flex;
+  align-items: center;
+}
+.about-content-header h2{
+  font-size: 2rem;
+  color: black;
+  margin-right: 5px;
+}
+.about-content-header span{
+  color: #f94d21;
+}
+.about-content-header img{
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.about-content p{
+  font-size: 14px;
+  color: #666;
+  padding: 15px 0px;
+}
+
+@media(max-width:900px){
+  .about{
+    padding: 100px 5%;
+    transition: all 0.5s;
+  }
+  .about-content-header h2{
+    font-size: 1.7rem;
+    transition: all 0.5s;
+  }
+  .about-content p{
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+}
+
+@media(max-width:650px){
+  .about{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  .about-image{
+    padding-right: 2%;
+    width: 90%;
+    transition: all 0.5s;
+  }
+  .about-img{
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .about-content{
+    width: 90%;
+    padding: 20px 0px;
+    padding-right: 2%;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-height:900px){
+  .about-img{
+    height: 300px;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-height:700px){
+  .about-img{
+    height: 300px;
+    transition: all 0.5s;
+  }
+  .about{
+    padding: 50px 0;
+    transition: all 0.5s;
+  }
+  .about-img{
+    height: 250px;
+    transition: all 0.5s;
+  }
+  .about-content-header h2{
+    font-size: 1.3rem;
+    transition: all 0.5s;
+  }
+  .about-content p{
+    font-size: 10px;
+    transition: all 0.5s;
+  }
+  .about-image-upper{
+    height: 15px;
+    transition: all 0.5s;
+  }
+}

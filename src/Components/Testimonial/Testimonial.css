@@ -1,0 +1,184 @@
+.testimonial {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10%;
+  margin-bottom: 50px;
+}
+
+.test-title {
+  margin-bottom: 40px;
+}
+.test-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.test-title span {
+  color: #f94d21;
+}
+.test-title img {
+  width: 25px;
+  border-radius: 3px;
+}
+
+.test-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 20%;
+  padding: 20px 15px;
+  border-radius: 2px;
+  background-color: #444444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.card-body {
+  width: 90%;
+  color: aliceblue;
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 2px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-content img {
+  width: 100%;
+  height: 250px;
+}
+.card-content h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.card-content p {
+  font-size: 14px;
+  color: #a6a2a2;
+  padding: 15px 0px;
+}
+.card-content h3 {
+  font-size: 1rem;
+  margin-bottom: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.next{
+  color: #f94d21;
+}
+.card:hover {
+  background-color: #f94d21;
+  transition: all 0.5s;
+}
+.card:hover .card-content p {
+  color: #f94d21;
+  transition: all 0.5s;
+}
+
+.card-learn-more{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1919;
+}
+.card-learn-more p{
+  overflow-y: scroll;
+  font-size: 12px;
+  color: #a6a2a2;
+  padding: 5px 0px;
+  text-align: justify;
+}
+.cross-icon{
+  cursor: pointer;
+  right: 0;
+  display: flex;
+  margin-left: 85%;
+  font-size: 1.4rem;
+  color: rgb(251, 7, 7);
+}
+
+h5{
+  padding-top: 5px;
+  margin-left: 65%;
+  font-size: 0.7rem;
+  color: #ffff;
+}
+/* ------------------------------ */
+@media (max-width: 950px) {
+  .card-content h2 {
+    font-size: 1rem;
+    transition: all 0.5s;
+  }
+  .card-content p {
+    font-size: 10px;
+    transition: all 0.5s;
+  }
+  .card-content h3 {
+    font-size: 0.8rem;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 950px) {
+  .testimonial {
+    width: 90%;
+    padding: 50px 5%;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 750px) {
+  .test-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    transition: all 0.5s;
+  }
+  .card {
+    width: 90%;
+    transition: all 0.5s;
+  }
+  .card-content h2 {
+    font-size: 1.4rem;
+    transition: all 0.5s;
+  }
+  .card-content p {
+    font-size: 14px;
+    transition: all 0.5s;
+  }
+  .card-content h3 {
+    font-size: 1rem;
+    transition: all 0.5s;
+  }
+}
+@media(max-width:420px){
+  .card-content h2 {
+    font-size: 1rem;
+    transition: all 0.5s;
+  }
+  .card-content p {
+    font-size: 10px;
+    transition: all 0.5s;
+  }
+  .card-content h3 {
+    font-size: 0.8rem;
+    transition: all 0.5s;
+  }
+}

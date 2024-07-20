@@ -1,0 +1,122 @@
+.program{
+  width: 100vw;
+  padding: 50px 8%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-bottom: 50px;
+}
+
+.program-left{
+  width: 40vw;
+}
+.program-left h2{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.program-left p{
+  font-size: 14px;
+  color: #a6a2a2;
+  padding: 15px 0px;
+}
+.program-left span{
+  color: #f94d21;
+}
+.program-left img{
+  width: 30px;
+  height: 25px;
+  border-radius: 2px;
+}
+
+.program-right{
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.achievement{
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  gap: 5px;
+}
+.achievement img{
+  width: 100%;
+  height: 130px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+}
+h3{
+  font-size: 14px;
+}
+.achievement p{
+  font-size: 12px;
+  color: #a6a2a2;
+}
+
+.achievement a{
+  text-decoration: none;
+  color: #f94d21;
+  display: flex;
+  margin-top: 3px;
+  align-items: center;
+}
+
+@media(max-width:900px){
+  .program{
+    padding: 50px 5%;
+    transition: all 0.5s;
+  }
+  .program-right{
+    width: 45vw;
+    transition: all 0.5s;
+  }
+  .achievement{
+    width: 14vw;
+    transition: all 0.5s;
+  }
+}
+@media(max-width:750px){
+  .program{
+    padding: 80px 0px;
+    flex-direction: column;
+    transition: all 0.5s;
+  }
+  .program-left{
+    width: 80%;
+    margin-bottom: 50px;
+    transition: all 0.5s;
+  }
+  .program-right{
+    width: 80%;
+    transition: all 0.5s;
+  }
+  .achievement{
+    width: 30%;
+    transition: all 0.5s;
+  }
+}
+
+@media(max-width:450px){
+  h3{
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+  .achievement p{
+    font-size: 10px;
+    transition: all 0.5s;
+  }
+  
+  .achievement a{
+    font-size: 10px;
+    transition: all 0.5s;
+  }
+  .achievement img{
+    height: 100px;
+    margin-bottom: px;
+    transition: all 0.5s;
+  }
+}
